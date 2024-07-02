@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SR Furniture</title>
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!--My style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- AlpineJS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- App -->
+    <script src="src/app.js"></script>
+
+</head>
+
+<body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">SR<span>furniture</span>.</a>
+
+        <div class="navbar-nav">
+            <a href="#home">Home</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="#produk">Produk</a>
+            <a href="#contact">Kontak</a>
+        </div>
+
+        <div class="navbar-extra">
+            <a href="#" id="search-button"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
+            <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+
+        <!-- Search form start -->
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box"><i data-feather="search"></i></label>
+        </div>
+        <!-- Search form end -->
+
+        <!-- Shopping cart start -->
+        <div class="shopping-cart">
+            <div class="cart-item">
+                <img src="img/kasur.jpg" alt="kasur">
+                <div class="item-detail">
+                    <h3>kasur</h3>
+                    <div class="item-price">IDR 40.000.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-item">
+                <img src="img/kursi gaming.jpg" alt="kursi gaming">
+                <div class="item-detail">
+                    <h3>kursi gamin</h3>
+                    <div class="item-price">IDR 20.000.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-item">
+                <img src="img/meja kerja.jpg" alt="meja kerja">
+                <div class="item-detail">
+                    <h3>meja kerja</h3>
+                    <div class="item-price">IDR 9.000.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-item">
+                <img src="img/meja makan.jpg" alt="meja makan">
+                <div class="item-detail">
+                    <h3>meja makan</h3>
+                    <div class="item-price">IDR 63.000.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-item">
+                <img src="img/soffa nyantai.jpg" alt="soffa nyantai">
+                <div class="item-detail">
+                    <h3>soffa nyantai</h3>
+                    <div class="item-price">IDR 15.000.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-item">
+                <img src="img/soffa.jpg" alt="soffa">
+                <div class="item-detail">
+                    <h3>soffa</h3>
+                    <div class="item-price">IDR 35.000.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+        </div>
+        <!-- Shopping cart end -->
+
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero section start -->
+    <section class="hero" id="home">
+        <main class="content">
+            <h1>Silahkan <span>Shopping</span></h1>
+            <p>Nikmatin shopping anda,silahkan pilih barang sesuai kebutuhan dan dompet anda.</p>
+            <a href="#" class="cta">Beli Sekarang</a>
+        </main>
+    </section>
+    <!-- Hero section end -->
+
+    <!-- About section strat -->
+    <section id="about" class="about">
+        <h2>Tentang<span> Kami</span></h2>
+
+        <div class="row">
+            <div class="about-img">
+                <img src="img/tentang kami.jpg" alt="Tentang Kami">
+            </div>
+            <div class="content">
+                <h3>Kenapa wajib shopping di toko kami?</h3>
+                <p>Karena disini kami menyediakan segala perlengkapan furniture yg anda butuhkan
+                    dengan harga yg sangat aman untuk di dompet anda,
+                    dan tentunya dengan kualitas barang terbaik.</p>
+            </div>
+        </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- Produk section start -->
+    <section id="produk" class="produk">
+        <h2>Produk<span> Kami</span></h2>
+        <p>Silahkan memilih produk sesuai kebutuhan dan dompet anda.</p>
+
+        <div class="row">
+            <div class="produk-card">
+                <img src="img/kasur.jpg" alt="kasur" class="produk-card-img">
+                <h3 class="produk-card-tittle">- kasur -</h3>
+                <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+                <a href="shopping-cart.html" class="add-to-cart" data-name="- kasur -" data-price="40000000" data-image="img/kasur.jpg"><i data-feather="shopping-cart"></i></a>
+                <p class="produk-card-price">IDR 40.000.000</p>
+            </div>
+            <div class="produk-card">
+                <img src="img/kursi gaming.jpg" alt="kursi gaming" class="produk-card-img">
+                <h3 class="produk-card-tittle">- kursi gaming -</h3>
+                <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+                <a href="shopping-cart.html" class="add-to-cart" data-name="- kursi gaming -" data-price="20000000" data-image="img/kursi gaming.jpg"><i data-feather="shopping-cart"></i></a>
+                <p class="produk-card-price">IDR 20.000.000</p>
+            </div>
+            <div class="produk-card">
+                <img src="img/meja kerja.jpg" alt="meja kerja" class="produk-card-img">
+                <h3 class="produk-card-tittle">- meja kerja -</h3>
+                <a href="shopping-cart.html" class="add-to-cart" data-name="- meja kerja -" data-price="9000000" data-image="img/meja kerja.jpg"><i data-feather="shopping-cart"></i></a>
+                <p class="produk-card-price">IDR 9.000.000</p>
+            </div>
+            <div class="produk-card">
+                <img src="img/meja makan.jpg" alt="meja makan" class="produk-card-img">
+                <h3 class="produk-card-tittle">- meja makan -</h3>
+                <a href="shopping-cart.html" class="add-to-cart" data-name="meja makan" data-price="63000000" data-image="img/meja makan.jpg"><i data-feather="shopping-cart"></i></a>
+                <p class="produk-card-price">IDR 63.000.000</p>
+            </div>
+            <div class="produk-card">
+                <img src="img/soffa nyantai.jpg" alt="soffa nyantai" class="produk-card-img">
+                <h3 class="produk-card-tittle">- soffa nyantai -</h3>
+                <a href="shopping-cart.html" class="add-to-cart" data-name="soffa nyantai" data-price="15000000" data-image="img/soffa nyantai.jpg"><i data-feather="shopping-cart"></i></a>
+                <p class="produk-card-price">IDR 15.000.000</p>
+            </div>
+            <div class="produk-card">
+                <img src="img/soffa.jpg" alt="soffa" class="produk-card-img">
+                <h3 class="produk-card-tittle">- soffa -</h3>
+                <a href="shopping-cart.html" class="add-to-cart" data-name="soffa" data-price="35000000" data-image="img/soffa.jpg"><i data-feather="shopping-cart"></i></a>
+                <p class="produk-card-price">IDR 35.000.000</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+                const name = this.dataset.name;
+                const price = this.dataset.price;
+                const image = this.dataset.image;
+
+                const product = {
+                    name,
+                    price,
+                    image,
+                    quantity: 1
+                };
+
+                // Reset cart
+                localStorage.setItem('cart', JSON.stringify([product]));
+
+                window.location.href = 'shopping-cart.html';
+            });
+        });
+    </script>
+    <!-- Produk section end -->
+
+    <!-- Contact section start -->
+    <section id="contact" class="contact">
+        <h2>Kontak<span> Kami</span></h2>
+        <p>Silahkan hubungin kami dengan kontak dan sosial media di bawah ini.</p>
+
+        <div class="row">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17335.179408680582!2d96.9217848768697!3d5.181509150685212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30477aa598f71d77%3A0xa7661865ec9fb426!2sPunteuet%2C%20Kec.%20Sawang%2C%20Kabupaten%20Aceh%20Utara%2C%20Aceh!5e0!3m2!1sid!2sid!4v1718786059523!5m2!1sid!2sid"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
+            <form action="">
+                <div class="input-group">
+                    <i data-feather="user"></i>
+                    <input type="text" placeholder="nama">
+                </div>
+                <div class="input-group">
+                    <i data-feather="mail"></i>
+                    <input type="text" placeholder="email">
+                </div>
+                <div class="input-group">
+                    <i data-feather="phone"></i>
+                    <input type="text" placeholder="no hp">
+                </div>
+                <button type="submit" class="btn">kirim pesan</button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Contact section end -->
+
+    <!-- Footer start -->
+    <footer>
+        <div class="socials">
+            <a href="https://www.instagram.com/"><i data-feather="instagram"></i></a>
+            <a href="https://www.twitter.com/"><i data-feather="twitter"></i></a>
+            <a href="https://www.youtube.com/"><i data-feather="youtube"></i></a>
+        </div>
+
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="#produk">Produk</a>
+            <a href="#contact">Kontak</a>
+        </div>
+
+        <div class="credit">
+            <p>Created by <a href="">sayyid ruhul haq</a>. | &copy; 2024.</p>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Modal box item detail start -->
+    <div class="modal" id="item-detail-modal">
+        <div class="modal-container">
+            <a href="#" class="close-icon"><i data-feather="x"></i></a>
+            <div class="modal-content">
+                <img src="img/kasur.jpg" alt="kasur">
+                <div class="product-content">
+                    <h3>kasur</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+                        nihil! Repudiandae quaerat placeat possimus earum,
+                        quos excepturi blanditiis dolorum, cumque amet cupiditate similique, ad dignissimos.</p>
+                    <div class="product-price">IDR 40.000.000</div>
+                    <a href="#"><i data-feather="shopping-cart"></i> <span>add to cart</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal box item detail end -->
+
+
+    <!-- Feather icon -->
+    <script>
+        feather.replace();
+    </script>
+
+    <!-- My Javasript-->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
